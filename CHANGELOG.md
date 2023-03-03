@@ -1,3 +1,19 @@
+# 3.2.0
+
+- chore:DEV-144619 switch mplat_pr_tools to mplat_dart
+
+- DEV-148909 - Flutter upgrade - DO NOT MERGE (#11)
+
+* chore: DEV-141181 Flutter 3 upgrade.
+
+* chore(flutter3): DEV-141181 Upgrade to Flutter 3 and version bump
+
+* chore(flutter3): DEV-141181 Upgrade to Flutter 3
+
+---------
+
+Co-authored-by: shanealk <109242115+shanealk@users.noreply.github.com>
+
 ## 3.1.0
 
 - Upgrade to Flutter 3

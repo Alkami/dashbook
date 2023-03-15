@@ -2,7 +2,7 @@ name: dashbook
 description: A showcase/sandbox library to help you build isolated widgets in Flutter
 homepage: https://github.com/erickzanardo/dashbook
 publish_to: https://dart.cloudsmith.io/alkami/flutter/
-version: 3.2.0
+version: 3.3.0
 
 environment:
   sdk: ">=2.18.0 <3.0.0" # dart version

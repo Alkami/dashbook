@@ -1,3 +1,7 @@
+# 3.4.0
+
+- enh: DEV-152053 Dynamically write/remove pubspec_overrides.yaml
+
 # 3.3.0
 
 - chore:DEV-151337 rename mplat_dart to mplat

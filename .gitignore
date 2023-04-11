@@ -31,6 +31,7 @@ test/generated_coverage_helper_test.dart
 .packages
 .pub-cache/
 .pub/
+pubspec_overrides.yaml
 build/
 
 # Android related

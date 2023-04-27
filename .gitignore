@@ -14,7 +14,7 @@ test/generated_coverage_helper_test.dart
 .svn/
 
 # IntelliJ related
-*.iml
+
 *.ipr
 *.iws
 .idea/

@@ -1,3 +1,7 @@
+# 3.5.0
+
+- enh: DEV-153701 enhancements to Android Studio experience
+
 # 3.4.0
 
 - enh: DEV-152053 Dynamically write/remove pubspec_overrides.yaml

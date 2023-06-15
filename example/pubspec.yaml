@@ -10,20 +10,17 @@ environment:
   flutter: ">=3.3.0"
 
 dependencies:
-  alkami_core_dependencies: 
-    hosted: https://dart.cloudsmith.io/alkami/flutter/
-    version: ^3.0.0
+  dashbook:
+    path: ../
 
   flutter:
     sdk: flutter
 
-  dashbook:
-    path: ../
+  flutter_platform:
+    hosted: https://dart.cloudsmith.io/alkami/flutter/
+    version: ^1.0.0
 
 dev_dependencies:
-  alkami_core_dev_dependencies: 
-    hosted: https://dart.cloudsmith.io/alkami/flutter/
-    version: ^3.0.0
 
 flutter:
   uses-material-design: true

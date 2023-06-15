@@ -1,4 +1,4 @@
-import 'package:alkami_core_dependencies/alkami_core_dependencies.dart';
+import 'package:flutter_platform/alkami_core_dependencies.dart';
 import '../story.dart';
 import 'widgets/property_scaffold.dart';
 

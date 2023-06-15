@@ -1,3 +1,7 @@
+# 3.6.0
+
+- enh: DEV-156308 Convert flutter_platform out of a monorepo
+
 # 3.5.0
 
 - enh: DEV-153701 enhancements to Android Studio experience

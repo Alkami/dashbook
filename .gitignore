@@ -28,9 +28,12 @@ test/generated_coverage_helper_test.dart
 **/doc/api/
 .dart_tool/
 .flutter-plugins
+.flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
+pubspec.lock
+example/pubspec.lock
 pubspec_overrides.yaml
 build/
 

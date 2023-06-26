@@ -1,3 +1,7 @@
+# 3.7.0
+
+- chore: DEV-156962 Implement new core_dependencies package
+
 # 3.6.0
 
 - enh: DEV-156308 Convert flutter_platform out of a monorepo

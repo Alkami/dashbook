@@ -2,7 +2,7 @@ name: dashbook
 description: A showcase/sandbox library to help you build isolated widgets in Flutter
 homepage: https://github.com/erickzanardo/dashbook
 publish_to: https://dart.cloudsmith.io/alkami/flutter/
-version: 3.6.0
+version: 3.7.0
 
 environment:
   sdk: ">=2.18.0 <3.0.0" # dart version
@@ -12,10 +12,10 @@ dependencies:
   # Dashbook is only used in iris storybook, so let's keep it here rather than 
   # moving it to alkami_core_dependencies
   flutter_colorpicker: ^1.0.3
-
-  flutter_platform: 
+  
+  alkami_core_dependencies:
     hosted: https://dart.cloudsmith.io/alkami/flutter/
-    version: ^1.0.0
+    version: ^4.0.0
 
 dev_dependencies:
   flutter_test:

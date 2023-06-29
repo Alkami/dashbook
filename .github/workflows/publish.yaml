@@ -1,50 +1,13 @@
-name: Release Package
-
-env:
-  dart_version: 2.19.2
-  flutter_version: 3.7.3
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+name: Publish
 
 on:
   push:
     branches:
-      - master
       - main
-      - release/**
+      - hotfix/**
 
 jobs:
-  release_package:
-    name: Release and tag package with GitHub Api
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Cache Flutter dependencies
-        uses: actions/cache@v2
-        with:
-          path: /opt/hostedtoolcache/flutter
-          key: ${{ env.flutter_version }}-flutter
-
-      - name: Install Flutter
-        uses: subosito/flutter-action@v1
-        with:
-          flutter-version: ${{ env.flutter_version }}
-          channel: 'stable'
-
-      - name: Authorize Cloudsmith
-        run:  ./shell_scripts/authorize_cloudsmith.sh ${{ secrets.CLOUDSMITH_API_KEY }}
-
-      - name: Activate mplat
-        shell: bash
-        run: |
-          dart pub global activate mplat \
-            --hosted-url https://dart.cloudsmith.io/alkami/flutter/
-      
-      - name: Pub get
-        run: flutter pub get
-
-      - name: Publish
-        run: mplat publish
+  build:
+    name: Publish
+    uses: alkami/flutter_platform/.github/workflows/reusable_publish.yaml@main
+    secrets: inherit

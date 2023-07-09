@@ -1,0 +1,13 @@
+name: Link Jira
+
+on:    
+  pull_request:
+    branches:
+      - main
+      - hotfix/**
+
+jobs:
+  build:
+    name: Link PR to JIRA issue
+    uses: alkami/github_actions/.github/workflows/reusable_jira_link.yaml@main
+    secrets: inherit

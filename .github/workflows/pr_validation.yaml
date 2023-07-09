@@ -1,0 +1,13 @@
+name: Validate PR
+
+on:
+  pull_request:
+    branches:
+      - main
+      - hotfix/**
+
+jobs:
+  build:
+    name: Validate Pull Request is Ready for Merge
+    uses: alkami/github_actions/.github/workflows/reusable_pr_validation.yaml@main
+    secrets: inherit

@@ -1,0 +1,15 @@
+name: Validate Labels
+
+on:
+  pull_request:
+    types: 
+      - opened
+      - synchronize
+      - labeled
+      - unlabeled
+
+jobs:
+  build:
+    name: Validate PR Labels
+    uses: alkami/github_actions/.github/workflows/reusable_label_validation.yaml@main
+    secrets: inherit

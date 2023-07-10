@@ -1,0 +1,16 @@
+name: On App Foundation Tag
+
+on:
+  # This workflow is triggered by the mplat CLI inside of a github action. The flow can be found here: https://confluence.alkami.com/x/3jdME
+  # Summary: On App Foundation Tag > GH action workflow inside of app-foundation > mplat CLI > This workflow manually triggered
+  workflow_dispatch:
+    inputs:
+      app_foundation_version:
+        required: true
+        description: The version of app-foundation which was just tagged
+
+jobs:
+  build:
+    name: Tag with app-foundation version and make a hotfix branch
+    uses: alkami/github_actions/.github/workflows/reusable_on_app_foundation_tag.yaml@main
+    secrets: inherit

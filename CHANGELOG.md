@@ -1,3 +1,7 @@
+# 3.8.0
+
+- feat(ci):DEV-156308 standardize GitHub actions (#19)
+
 # 3.7.0
 
 - chore: DEV-156962 Implement new core_dependencies package

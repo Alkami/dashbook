@@ -1,0 +1,12 @@
+name: On App Foundation Release Branch
+
+on:
+  # This workflow is triggered by the mplat CLI inside of a github action. The flow can be found here: https://confluence.alkami.com/x/3jdME
+  # Summary: On App Foundation Release Branch Creation > GH action workflow inside of app-foundation > mplat CLI > This workflow manually triggered
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Tag with app-foundation version and make a hotfix branch
+    uses: alkami/github_actions/.github/workflows/reusable_on_app_foundation_release_branch.yaml@main
+    secrets: inherit

@@ -5,8 +5,8 @@ publish_to: https://dart.cloudsmith.io/alkami/flutter/
 version: 3.9.0
 
 environment:
-  sdk: ">=3.7.2 <4.0.0" # dart version
-  flutter: ">=3.29.3"
+  sdk: ">=3.3.4 <4.0.0" # dart version
+  flutter: ">=3.24.5"
 
 dependencies:
   # Dashbook is only used in iris storybook, so let's keep it here rather than 
